@@ -1,0 +1,10 @@
+Hachti b site web 
+fih page loula login 
+page 2 feha accueil:
+    - titre irregation intelligente
+    - description taa irrigation intelligente
+    - info 
+    - contact taa les sociétés li tekhdem f domaine hedhaa
+        - tahthom 3 choix b lien hypertexte tmatem felfel batata:
+            - tenzel al tmatem yhez l page feha tmatem chnya test7a9 f byout moukayfa w lbara w kadeh mee tes7eha w kadeh temperature parfaite
+            leha w kadeh humidité w tenzel al felfel kifkif w al batata kifkif w saleeeem

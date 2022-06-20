@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 20vh;
+  }
+  
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img{
+    margin: 2rem 0
+}
+.navbar {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #317001ed;
+    color: #fff;
+    padding: 1.5rem 5rem;
+    width: 100%;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    font-size: 21px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.dropdown {
+    background-color: black;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+
+.header{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    height: 30rem;
+    text-align: center;
+    background-image: url("bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0e0e0ec4;
+    background-blend-mode: overlay;
+
+}
+
+.header p{
+    margin: 0 auto;
+    position: relative;
+    top: 15rem;
+    width: 100%;
+    line-height: 1.5;
+    color: white;
+    font-size: 48px;
+}
+
+.header img{
+    text-align: center;
+    margin-top: 10rem;
+    max-width: 10vw;
+}
+
+.header h3{
+    margin-top: 2rem;
+    color: white;
+}
+
+.about{
+    padding: 2rem 5rem;
+    text-align: center;
+    text-align: center;
+}
+
+.about .img-container{
+    height: 35vh;
+    width: 100%;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0e0e0e87;
+    background-blend-mode: overlay;
+}
+
+.about h1{
+    color: white;
+    position: relative;
+    top: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2rem 5rem;
+
+}
+
+.info img{
+    max-width: 350px;
+}
+
+.info p, h2{
+    align-items: center;
+    align-self: center;
+}
+
+.content-p-l{
+    padding-left: 2rem;
+}
+
+.content-p-r{
+    padding-right: 2rem;
+}
+
+.info h2{
+    margin-bottom: 2rem;
+}
+
+
+.contact{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.contact .enterprise{
+    width: 280px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.enterprise img{
+    margin-bottom: .5rem;
+}
+
+.enterprise h3{
+    margin-bottom: .5rem;
+}
+
+.products{
+    margin-top: 2rem;
+    position: relative;
+    background-image: url("bg__.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0e0e0ed8;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+.products h1{
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+.veg{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row; 
+    margin: 2rem 0;
+
+}
+
+.veg div{
+    width: 100px;
+    height: 130px;
+    margin: 45px;
+    color: white;
+}
+
+
+.veg div a{
+    display: block;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.footer{
+    text-align: center;
+    margin: 2rem 2rem;
+}
+.footer h5{
+    margin-top: -2rem;
+}
+
+@media (max-width: 800px) {
+    .info {
+      flex-direction: column;
+    }
+
+    .info h2{
+        margin: 2rem 0;
+    }
+
+    .wrapper :nth-of-type(2n){
+        flex-direction: column-reverse !important;
+    }
+  }
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: fixed;
+        background-color: #317001ed;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact .enterprise{
+        width: 450px;
+    }
+}
